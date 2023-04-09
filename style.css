@@ -1,0 +1,40 @@
+body {
+    min-height: 100vh;
+}
+#drum-machine {
+    width: 660px;
+    min-height: 316px;
+}
+.pad-bank {
+    height: 100%;
+    gap: 5px;
+    width: 100%;
+}
+.pad-bank > .d-flex {
+    display: flex;
+    gap: 5px;
+}
+.drum-pad {
+    width: 100px;
+    height: 80px;
+    border-radius: 3px;
+    display: grid;
+    place-items: center;
+}
+#display {
+    height: 49px;
+    border-radius: 3px;
+    background-color: #eaeaea;
+}
+.form-range {
+    background-color: #eaeaea;
+    border-radius: 5px;
+}
+.display {
+    width: 100%;
+}
+@media (max-width: 660px) {
+    #drum-machine {
+        flex-direction: column-reverse;
+    }
+}
